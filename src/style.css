@@ -1,0 +1,92 @@
+.container {
+  max-width: 500px;
+  margin-top: 100px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+body {
+  font-family: Helvetica, sans-serif;
+  background: linear-gradient(
+    89deg,
+    rgb(21, 74, 189) 0.1%,
+    rgb(26, 138, 211) 51.5%,
+    rgb(72, 177, 234) 100.2%
+  );
+}
+
+input {
+  margin: 0 auto;
+  width: 350px;
+}
+
+.current-location-btn {
+  background-color: transparent;
+  color: rgb(242, 242, 247);
+  text-shadow: 0.5px 1px 3px rgb(142, 142, 147);
+  border-color: rgb(242, 242, 247);
+}
+
+h1 {
+  padding-top: 55px;
+  line-height: 30px;
+  text-align: left;
+  font-size: 55px;
+  color: rgb(242, 242, 247);
+  text-shadow: 0.5px 1px 3px rgb(142, 142, 147);
+}
+h2 {
+  text-align: right;
+  line-height: 25px;
+  font-size: 40px;
+  color: rgb(242, 242, 247);
+  font-weight: lighter;
+  text-shadow: 0.5px 1px 3px rgb(142, 142, 147);
+}
+
+.fahrenheit {
+  font-size: 20px;
+  position: relative;
+  bottom: 17px;
+  right: 8px;
+}
+
+h3 {
+  text-align: left;
+}
+small,
+.day,
+.time {
+  font-size: 20px;
+  color: rgb(174, 174, 178);
+  font-weight: lighter;
+  text-shadow: 0.5px 1px 3px rgb(72, 72, 74);
+}
+.time {
+  position: relative;
+  right: 10px;
+}
+.row {
+  line-height: 80px;
+}
+.cloud {
+  font-size: 60px;
+  position: relative;
+  left: 110px;
+  top: 42px;
+  color: rgb(242, 242, 247);
+}
+.condition {
+  position: relative;
+  right: 14px;
+}
+.forecast {
+  font-size: 19px;
+  color: rgb(242, 242, 247);
+  font-weight: lighter;
+  text-shadow: 0.5px 1px 3px rgb(142, 142, 147);
+}
+.partly-cloudy,
+.sunny {
+  font-size: 25px;
+  color: rgb(242, 242, 247);
+}
