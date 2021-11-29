@@ -29,12 +29,17 @@ timeNow.innerHTML = now.toLocaleString("en-US", {
 
 // Search engine
 function showWeather(response) {
-  let temperature = Math.round(response.data.main.temp);
-  let currentTemp = document.querySelector("#current-temp");
-  currentTemp.innerHTML = `${temperature}`;
+  document.querySelector("#current-temp").innerHTML = Math.round(
+    response.data.main.temp
+  );
+  document.querySelector("#city-name").innerHTML = response.data.name;
 
-  let h1 = document.querySelector("#city-name");
-  h1.innerHTML = `${response.data.name}`;
+  document.querySelector("#description").innerHTML =
+    response.data.weather[0].main;
+  document.querySelector("#humidity").innerHTML = response.data.main.humidity;
+  document.querySelector("#wind").innerHTML = Math.round(
+    response.data.wind.speed
+  );
 }
 
 function searchCityWeather(event) {
