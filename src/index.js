@@ -42,18 +42,22 @@ function showWeather(response) {
   );
 }
 
-function searchCityWeather(event) {
-  event.preventDefault();
-  let cityInput = document.querySelector("#city-input");
+function search(city) {
   let apiKey = "0cd6606c8a21838ee3d658a5afde4449";
-  let units = "imperial";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityInput.value}&appid=${apiKey}&units=${units}`;
-
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
   axios.get(`${apiUrl}&appid=${apiKey}`).then(showWeather);
 }
 
+function handleSubmit(event) {
+  event.preventDefault();
+  let city = document.querySelector("#city-input").value;
+  search(city);
+}
+
 let searchForm = document.querySelector("#search-form");
-searchForm.addEventListener("submit", searchCityWeather);
+searchForm.addEventListener("submit", handleSubmit);
+
+search("Phoenix");
 
 // Navigator
 
