@@ -67,6 +67,7 @@ small,
 }
 .row {
   line-height: 80px;
+  margin-bottom: 100px;
 }
 .cloud {
   font-size: 60px;
@@ -89,4 +90,14 @@ small,
 .sunny {
   font-size: 25px;
   color: rgb(242, 242, 247);
+}
+
+.footer {
+  color: rgb(174, 174, 178);
+  text-shadow: 0.5px 0.5px 1px rgb(72, 72, 74);
+}
+
+a {
+  text-decoration-line: none;
+  text-shadow: 0.5px 1px 3px rgb(142, 142, 147);
 }
