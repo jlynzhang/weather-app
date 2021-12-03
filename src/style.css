@@ -17,6 +17,16 @@ body {
 input {
   margin: 0 auto;
   width: 350px;
+  border-style: hidden;
+  border-color: rgb(160, 160, 163);
+}
+
+.search-button {
+  color: rgb(242, 242, 247);
+  background: transparent;
+  border-style: outset;
+  border-color: rgb(242, 242, 247);
+  text-shadow: 0.5px 1px 3px rgb(79, 79, 79);
 }
 
 .current-location-btn {
