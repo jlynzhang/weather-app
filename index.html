@@ -40,7 +40,10 @@
       <h2>
         <b>
           <span class="temp" id="current-temp"></span>
-          <span class="fahrenheit"> °F </span>
+          <span class="units"
+            ><a href="#" id="fahrenheit-link" class="active"> °F </a> /
+            <a href="#" id="celsius-link">°C</a></span
+          >
         </b>
         <br />
         <small class="description" id="description"></small>
@@ -80,8 +83,11 @@
         <span class="footer"
           >Project coded by Jess Zhang and open-sourced on</span
         >
-        <a target="_blank" href="https://github.com/jlynzhang/weather-app"
-          >Github</a
+        <a
+          class="footer-link"
+          target="_blank"
+          href="https://github.com/jlynzhang/weather-app"
+          >GitHub</a
         >
       </footer>
     </div>

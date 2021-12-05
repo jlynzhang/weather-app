@@ -1,4 +1,3 @@
-// Day & time display
 let now = new Date();
 let day = now.getDay();
 let hours = now.getHours();
@@ -27,7 +26,6 @@ timeNow.innerHTML = now.toLocaleString("en-US", {
   hour12: true,
 });
 
-// Search engine
 function showWeather(response) {
   document.querySelector("#current-temp").innerHTML = Math.round(
     response.data.main.temp
@@ -40,6 +38,8 @@ function showWeather(response) {
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
   );
+
+  fahrenheiTemp = response.data.main.temp;
 }
 
 function search(city) {
@@ -57,10 +57,6 @@ function handleSubmit(event) {
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSubmit);
 
-search("Phoenix");
-
-// Navigator
-
 function tempByLocation(position) {
   let apiKey = "0cd6606c8a21838ee3d658a5afde4449";
   let units = "imperial";
@@ -74,5 +70,30 @@ function getLocation(event) {
   navigator.geolocation.getCurrentPosition(tempByLocation);
 }
 
+function showCelsiusTemp(event) {
+  event.preventDefault();
+  let celsiusTemp = ((fahrenheiTemp - 32) * 5) / 9;
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
+  document.querySelector("#current-temp").innerHTML = Math.round(celsiusTemp);
+}
+
+function showFahrenheitTemp(event) {
+  event.preventDefault();
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
+  document.querySelector("#current-temp").innerHTML = Math.round(fahrenheiTemp);
+}
+
+let fahrenheiTemp = null;
+
 let locateButton = document.querySelector("#current-location-btn");
 locateButton.addEventListener("click", getLocation);
+
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", showCelsiusTemp);
+
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", showFahrenheitTemp);
+
+search("Phoenix");

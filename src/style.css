@@ -53,12 +53,18 @@ h2 {
   text-shadow: 0.5px 1px 3px rgb(142, 142, 147);
 }
 
-.fahrenheit {
+.units {
   font-size: 20px;
   position: relative;
   bottom: 17px;
-  right: 8px;
 }
+
+.units .active {
+  color: rgb(33, 33, 33);
+  cursor: default;
+  text-decoration: none;
+}
+
 
 h3 {
   text-align: left;
@@ -82,7 +88,7 @@ small,
 .cloud {
   font-size: 60px;
   position: relative;
-  left: 110px;
+  left: 65px;
   top: 42px;
   color: rgb(242, 242, 247);
 }
@@ -107,7 +113,7 @@ small,
   text-shadow: 0.5px 0.5px 1px rgb(72, 72, 74);
 }
 
-a {
-  text-decoration-line: none;
+.footer-link {
+  text-decoration: none;
   text-shadow: 0.5px 1px 3px rgb(142, 142, 147);
 }
