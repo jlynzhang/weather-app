@@ -38,6 +38,16 @@ function showWeather(response) {
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
   );
+  document
+    .querySelector("#current-weather-icon")
+    .setAttribute(
+      "src",
+      `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    );
+
+  document
+    .querySelector("#current-weather-icon")
+    .setAttribute("alt", response.data.weather[0].description);
 
   fahrenheiTemp = response.data.main.temp;
 }

@@ -43,6 +43,7 @@ h1 {
   font-size: 55px;
   color: rgb(242, 242, 247);
   text-shadow: 0.5px 1px 3px rgb(142, 142, 147);
+  position: relative;
 }
 h2 {
   text-align: right;
@@ -65,7 +66,6 @@ h2 {
   text-decoration: none;
 }
 
-
 h3 {
   text-align: left;
 }
@@ -81,17 +81,16 @@ small,
   position: relative;
   right: 10px;
 }
+.current-weather-icon {
+  position: relative;
+  left: 65px;
+  top: 60px;
+}
 .row {
   line-height: 80px;
   margin-bottom: 100px;
 }
-.cloud {
-  font-size: 60px;
-  position: relative;
-  left: 65px;
-  top: 42px;
-  color: rgb(242, 242, 247);
-}
+
 .description {
   position: relative;
   right: 14px;
