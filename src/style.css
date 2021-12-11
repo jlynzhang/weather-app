@@ -4,6 +4,7 @@
   text-align: center;
   margin-bottom: 100px;
 }
+
 body {
   font-family: Helvetica, sans-serif;
   background: linear-gradient(
@@ -69,6 +70,7 @@ h2 {
 h3 {
   text-align: left;
 }
+
 small,
 .day,
 .time {
@@ -77,15 +79,18 @@ small,
   font-weight: lighter;
   text-shadow: 0.5px 1px 3px rgb(72, 72, 74);
 }
+
 .time {
   position: relative;
   right: 10px;
 }
+
 .current-weather-icon {
   position: relative;
   left: 65px;
   top: 60px;
 }
+
 .row {
   line-height: 80px;
   margin-bottom: 100px;
@@ -95,16 +100,30 @@ small,
   position: relative;
   right: 14px;
 }
+
 .forecast {
   font-size: 19px;
   color: rgb(242, 242, 247);
   font-weight: lighter;
   text-shadow: 0.5px 1px 3px rgb(142, 142, 147);
 }
-.partly-cloudy,
-.sunny {
-  font-size: 25px;
-  color: rgb(242, 242, 247);
+
+.forecast-days {
+  position: relative;
+  right: 80px;
+}
+
+.max-temp {
+  position: relative;
+  left: 50px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.min-temp {
+  position: relative;
+  left: 80px;
+  opacity: 0.75;
 }
 
 .footer {

@@ -36,7 +36,12 @@
         <span class="day" id="day"> <small></small> </span>
         <span class="time" id="time"> <small></small> </span>
       </h1>
-      <img src="https://openweathermap.org/img/wn/04d@2x.png" alt="Clear" class="current-weather-icon" id="current-weather-icon"/>
+      <img
+        src="https://openweathermap.org/img/wn/04d@2x.png"
+        alt="Clear"
+        class="current-weather-icon"
+        id="current-weather-icon"
+      />
       <h2>
         <b>
           <span class="temp" id="current-temp"></span>
@@ -54,29 +59,31 @@
       </h2>
       <h3><small>5 Day Forecast</small></h3>
       <div class="row">
-        <div class="col-6 forecast">Sat</div>
+        <div class="col-6 forecast"><span class="forecast-days">Sat</span></div>
         <div class="col-6 forecast">
-          <i class="fas fa-cloud-sun partly-cloudy"></i> <b>88°</b>
+          <span class="forecast-temps">
+            <span class="max-temp">88°</span><span class="min-temp">60°</span>
+          </span>
         </div>
         <hr />
-        <div class="col-6 forecast">Sun</div>
+        <div class="col-6 forecast"><span class="forecast-days">Sun</span></div>
         <div class="col-6 forecast">
-          <i class="fas fa-cloud-sun partly-cloudy"></i> <b>86°</b>
+          <span class="max-temp">86°</span><span class="min-temp">60°</span>
         </div>
         <hr />
-        <div class="col-6 forecast">Mon</div>
+        <div class="col-6 forecast"><span class="forecast-days">Mon</span></div>
         <div class="col-6 forecast">
-          <i class="fas fa-sun sunny"></i> <b>90°</b>
+          <span class="max-temp">90°</span><span class="min-temp">60°</span>
         </div>
         <hr />
-        <div class="col-6 forecast">Tue</div>
+        <div class="col-6 forecast"><span class="forecast-days">Tue</span></div>
         <div class="col-6 forecast">
-          <i class="fas fa-sun sunny"></i> <b>76°</b>
+          <span class="max-temp">76°</span><span class="min-temp">60°</span>
         </div>
         <hr />
-        <div class="col-6 forecast">Wed</div>
+        <div class="col-6 forecast"><span class="forecast-days">Wed</span></div>
         <div class="col-6 forecast">
-          <i class="fas fa-sun sunny"></i> <b>81°</b>
+          <span class="max-temp">81°</span><span class="min-temp">60°</span>
         </div>
       </div>
       <footer>
