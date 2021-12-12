@@ -91,17 +91,17 @@ small,
   top: 60px;
 }
 
-.row {
-  line-height: 80px;
-  margin-bottom: 100px;
-}
-
 .description {
   position: relative;
   right: 14px;
 }
 
 .forecast {
+  line-height: 80px;
+  margin-bottom: 100px;
+}
+
+.forecast-details {
   font-size: 19px;
   color: rgb(242, 242, 247);
   font-weight: lighter;
@@ -110,19 +110,19 @@ small,
 
 .forecast-days {
   position: relative;
-  right: 80px;
+  right: 50px;
 }
 
-.max-temp {
+.forecast-max-temp {
   position: relative;
-  left: 50px;
+  left: 30px;
   font-weight: 500;
   font-size: 20px;
 }
 
-.min-temp {
+.forecast-min-temp {
   position: relative;
-  left: 80px;
+  left: 40px;
   opacity: 0.75;
 }
 
