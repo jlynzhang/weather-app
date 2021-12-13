@@ -86,6 +86,8 @@ function showWeather(response) {
   document.querySelector("#current-temp").innerHTML = Math.round(
     response.data.main.temp
   );
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
   document.querySelector("#city-name").innerHTML = response.data.name;
 
   document.querySelector("#description").innerHTML =
